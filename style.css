@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.score {
+  display: inline;
+  position: absolute;
+  left: 45%;
+  top: 4px;
+  font-size: 28;
+  text-align: center;
+}
+
+.gameWindow {
+  display: grid;
+  grid-template-columns: repeat(100,1fr);
+  grid-template-rows: repeat(60,1fr);
+  border: solid 2px black;
+  box-shadow: 0 0 5px rgba(0,0,0,0.7);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background-color: lightgray;
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+}
+
+.snake {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+
+.fruit {
+  background-color: red;
+  border-radius: 50%;
+  /* grid-area: 30/30; */
+}
